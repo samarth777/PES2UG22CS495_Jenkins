@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'g++ -o PES2UG22CS495-1 ./main/hello.cpp'
-                echo 'Build stage successful'
+                eo 'Build stage successful'
             }
         }
         stage('Test') {
@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deployment successful'
+                eo 'Deployment successful'
             }
         }
     }
